@@ -84,6 +84,15 @@
     color: rgb(220, 223, 208);
   }
 
+ #SubMenu2{
+  display: none;
+ }
+
+ #SubMenu1 li:last-child {
+  display: none;
+
+ }
+
 
   .sub-menu { 
     /*width: 140px;*/
