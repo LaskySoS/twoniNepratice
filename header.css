@@ -1,6 +1,6 @@
 
   .headerr {
-      background-color: rgb(45, 82, 51);
+      background-color: rgb(45, 82, 51); 
       /*
       display: flex;
       flex-direction: row;
@@ -45,7 +45,7 @@
           height: 40px;
           position: absolute;
           bottom: 5px;
-          right: 150px;
+          right: 250px;
           background-color: rgb(45, 82, 51); 
           display: flex;
           justify-content:space-evenly;
@@ -133,6 +133,13 @@
   color:rgb(220, 223, 208) 
 }
 
+  .facebook-logo-area{
+    flex: 1;
+    
+    position: absolute;
+    bottom: 5px;
+    right:120px;
+  }
  
   .ig-logo-area{
     flex: 1;
@@ -147,6 +154,10 @@
     width: 40px;
   }
 
+  .facebook-logo{
+    width: 40px;
+    border-radius: 5px;
+  }
 
 
   
@@ -186,6 +197,17 @@
       font-size: 15px;
       }
 
+      
+  .facebook-logo-area{
+    right: 5px;
+    top:5px
+  }
+      
+  .facebook-logo{
+    width: 30px;
+
+  }
+
     .ig-logo-area{
       right: 5px;
       }
@@ -213,9 +235,9 @@
     .nav-area
     {
      
-      width: 500px;
-      right: 80px;
-      justify-content: flex-end;
+      width: 350px;
+      right: 150px;
+      justify-content: space-between;
   
     }
 
@@ -232,6 +254,17 @@
       width:100px;
       padding: 0px; 
       font-size: 20px;
+      }
+
+
+    .facebook-logo-area{
+        right: 65px;
+    
+      }
+          
+    .facebook-logo{
+        width: 30px;
+    
       }
 
     .ig-logo-area{

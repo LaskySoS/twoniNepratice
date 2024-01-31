@@ -34,9 +34,9 @@
 */
 
     background-color: rgb(245, 240, 240);
-    padding: 10vh 5vw;
+    padding: 13vh 5vw;
 
-    height: 60vh;
+    height: 70vh;
     position: relative;
     
 
@@ -143,7 +143,19 @@
 }
 
 .ig-link{
-    color:rgb(20, 146, 104);
+    color:rgb(255,21,113);
+    text-decoration: none;
+}
+
+.fb-link-area{
+
+    font-family: 'Playpen Sans', cursive;
+    font-weight: 700;
+    margin-top: 1vh;
+}
+
+.fb-link{
+    color:rgb(59,87,157);
     text-decoration: none;
 }
 
