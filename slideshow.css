@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.slide-show-area
+{
+    /*
+    border-width: 2px;
+    border-color: red;
+    border-style: solid;
+    */  
+    height: 70vh;
+   /* display: flex;*/
+    overflow: hidden;/*自動隱藏超出的文字或圖片*/
+    position: relative;
+
+}
+
+.slidepic
+{
+    
+   
+    /*max-height: 50%;*/
+    height: 70vh;
+    width: 100vw;
+   /* object-fit:cover;*/
+    
+
+}
+
+.slide-pic-ul/*幻燈片列表*/
+{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+  
+    /*width: 1863px;*/
+    width: 500px;
+    position: absolute;
+    top: 0px;
+    /* 设置右边的距离即可 */
+    left: 0px;
+    /* 如果不想要轮播效果可以把下面这行代码注释掉 */;
+    transition-duration: 1.5s;
+}
+
+.slide-pic-li/*幻燈片列表細項*/
+{
+    list-style: none;/*讓每個li項目沒有標誌，不使用編號*/
+    float:left;/*讓每個 li 項目水平浮動排列(類似把li做inlineblock )*/
+
+}
+
+
+/* 左右两侧样式 */
+
+.slide-show-area:hover .direction
+{
+    display: block;
+    /*background-color: grey;*/
+}
+
+/*幻燈片左右箭頭*/
+.direction{
+    position: absolute;
+
+    font-size: 100px;
+    color: rgb(98, 94, 94);
+    cursor: pointer;
+    /*display: none;/*none就是平常不會秀出來，要等到hover的時候才會?*/
+    border-radius: 50%;
+    opacity: 0.5;
+    
+}
+.direction:hover{
+   color:rgb(88, 84, 84); 
+   opacity: 0.5;
+}
+
+#left {
+    top: 200px;
+    left: 20px;
+}
+ 
+#right {
+    top: 200px;
+    right: 20px;
+}
+/* 圖片下面五個點的樣式 */
+.dot {
+    width: 15px;
+    height: 15px;
+    border-radius:10px;
+ 
+    background-color: white;
+    display: inline-block;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+ /*選中的那一點*/
+#active {
+    background-color: rgb(170, 166, 166);
+}
+/*5個點的位置*/
+.dots {
+ 
+    width: 300px;
+    height: 20px;
+    position: absolute;
+    right:0px;
+    bottom: 10px;
+    margin-top: 580px;
+}
+
+
+
+@media screen and  (max-width:767px)
+{
+    .slide-show-area{
+        height: 50vh;
+    }
+    .slidepic{
+        height: 50vh;
+    }
+
+    #left,#right{
+        top: 130px;
+    }
+}
+
+
+@media screen and  (min-width:768px) and (max-width:991px)
+{   
+    .slide-show-area{
+        height: 50vh;
+    }
+    .slidepic{
+        height: 50vh;
+    }
+    
+
+    #left,#right{
+        top: 180px;
+    }
+}

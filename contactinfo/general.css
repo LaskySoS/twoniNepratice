@@ -1,0 +1,48 @@
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 12px;
+    background-color: rgb(248, 242, 242);
+    height: 1500px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right:0px;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.home-page-decorate-line
+{
+
+
+    border-bottom-width:1px;
+    border-bottom-color: rgb(193, 190, 190);
+    border-bottom-style: solid;
+    height: 80px;
+    display: block;
+}
+
+.home-page-end-info{
+
+
+
+    color:rgb(156, 155, 155);
+    text-align: center;
+    margin-bottom: 2vh;
+   
+}
+
+@media screen and (max-width:767px){
+    body{
+        height: 1150px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px){
+    body{
+        height: 1350px;
+    }
+}
