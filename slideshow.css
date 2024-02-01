@@ -63,7 +63,6 @@
 
 /*幻燈片左右箭頭*/
 .direction{
-    display: none;
     position: absolute;
 
     font-size: 100px;
@@ -80,11 +79,13 @@
 }
 
 #left {
+    display: none;
     top: 200px;
     left: 20px;
 }
  
 #right {
+    display: none;
     top: 200px;
     right: 20px;
 }
@@ -128,6 +129,9 @@
 
     #left,#right{
         top: 130px;
+    }
+    .dots{
+        right: 10px;
     }
 }
 
