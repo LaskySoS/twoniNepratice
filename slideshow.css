@@ -63,6 +63,7 @@
 
 /*幻燈片左右箭頭*/
 .direction{
+    display: none;
     position: absolute;
 
     font-size: 100px;
