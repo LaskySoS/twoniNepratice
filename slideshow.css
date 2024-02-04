@@ -104,6 +104,7 @@
  /*選中的那一點*/
 #active {
     background-color: rgb(170, 166, 166);
+    transition: .7s;
 }
 /*5個點的位置*/
 .dots {

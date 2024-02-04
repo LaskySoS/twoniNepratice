@@ -4,6 +4,10 @@
         opacity: 0;
         transform: translateY(-30px) scale(0.9);
     }
+    /*在 CSS 動畫裡，from 表示起始，
+    也可以用 0% 表示，to 表示結束，
+    也可以用 100% 表示，因為數值範圍是 0%~100%，
+    所以超過這個範圍的都是錯誤的。*/
 
     100% {
         opacity: 1;
@@ -19,6 +23,11 @@
         transform: translateY(30px) scale(0.9);
     }
 
+    /*translateY(m) 元素以參考點為中心，Y軸位移m距離
+    scale(sx,sy) 	縮放
+                    元素以參考點為中心，X軸縮放s倍，Y軸縮放s倍，
+                    如果只寫一個參數，就是X、Y軸以同樣倍率縮放
+    */
     100% {
         opacity: 1;
         transform: translateY(0px) scale(1);

@@ -1,8 +1,8 @@
 let pos = 0;
 let timer;
 let num;
-// 对应小红点亮函数
-function toRed()
+// 下方小點函數
+function togray()
 {
     let dots = document.querySelectorAll(".dot");
     for (let i = 0; i < dots.length; i++)
@@ -24,15 +24,15 @@ function setTimer()
         document.querySelector(".slide-pic-ul").style.left = pos/5 + "vw";
         //"ul"物件向左移"pos"個px;
  
-        toRed();  // 对应点亮起来
+        togray();  // 投影到哪張點就在哪
     
   
-        pos -= 500;// 递减
+        pos -= 500;// 畫面往左邊跑
         if (pos == -2500)
         {
             pos = 0;
         }
-    }, 5000)
+    }, 4000)
 }
 setTimer();
 
@@ -55,7 +55,7 @@ document.querySelector("#left").addEventListener("click", () =>
         pos = -2000;
     }
     document.querySelector(".slide-pic-ul").style.left = pos/5 + "vw";
-    toRed();
+    togray();
 })
 document.querySelector("#right").addEventListener("click", () =>
     {
@@ -65,20 +65,22 @@ document.querySelector("#right").addEventListener("click", () =>
             pos = 0;
         }
         document.querySelector(".slide-pic-ul").style.left = pos/5 + "vw";
-        toRed();
+        togray();
     })
     // 点击小圆点对应亮色
 let dots = document.querySelectorAll(".dot");
 for (let i = 0; i < dots.length; i++)
 {
-    (function(i)
+    (function clickdots(i)
     {
         dots[i].addEventListener("click", () =>
         {
             num = i;
             pos = -num * 500;
             document.querySelector(".slide-pic-ul").style.left = pos/5 + "vw";
-            toRed();
+            togray();
         })
-    })(i)
+    })(i)//IIFE全名為Immediately Invoked Functions Expressions
+         //指的是可以立即執行的Functions Expressions函式表示式
+         //後面的(i)表示立刻執行clickdots()並傳i進去
 }
