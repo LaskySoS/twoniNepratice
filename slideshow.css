@@ -79,13 +79,13 @@
 }
 
 #left {
-    display: none;
+   
     top: 200px;
     left: 20px;
 }
  
 #right {
-    display: none;
+   
     top: 200px;
     right: 20px;
 }
